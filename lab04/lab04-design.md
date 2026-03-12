@@ -25,6 +25,7 @@ common web graphic formats and the use of CSS for styling.
 
 ## Project Layout
 
+```Ascii
 lab04/
 │
 ├── index.html
@@ -37,6 +38,7 @@ lab04/
     ├── earth-axis.gif
     ├── earth-from-space.jpg
     └── earth-render.png
+```
 
 ## Pages
 
