@@ -25,7 +25,7 @@ common web graphic formats and the use of CSS for styling.
 
 ## Project Layout
 
-```Ascii
+```text
 lab04/
 │
 ├── index.html
@@ -57,7 +57,7 @@ Use semantic HTML.
 
 ### Shared Layout
 
-```Pug
+```pug
 header
   h1 Image Showcase
 
