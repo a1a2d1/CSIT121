@@ -59,18 +59,18 @@ Use semantic HTML.
 
 ```Pug
 header
-  h1: Image Showcase
+  h1 Image Showcase
 
   nav
     ul
-      li: index.html
-      li: earth-axis.html
-      li: earth-from-space.html
-      li: earth-render.html
+      li index.html
+      li earth-axis.html
+      li earth-from-space.html
+      li earth-render.html
 
-main: page specific content
+main page specific content
 
-footer: copyright
+footer copyright
 ```
 
 ### Image Pages
@@ -79,17 +79,21 @@ footer: copyright
 main
   section
     article
-      h2: Image Title
-      img
-      h3: Description
-      p: Short description of the image
-      h3: Image File Type
-      p: Explanation of file type
-      h3: Why this image was chosen
-      p: Reason for selecting image
-      h3: Source
+      h2 Image Title
+      img(src="")
+
+      h3 Description
+      p Short description of the image
+
+      h3 Image File Type
+      p Explanation of file type
+
+      h3 Why this image was chosen
+      p Reason for selecting image
+
+      h3 Source
       p
-        a: link to source
+        a(href="#") link to source
 ```
 
 ## Design Notes
