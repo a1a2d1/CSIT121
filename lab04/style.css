@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background: url('images/milkyway.jpg') center / cover no-repeat fixed;
+}
+
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: antiquewhite;
+  border: 2px solid lightgray;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(44, 120, 150);
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: darkorange;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adding padding to the top is my janky solution to push footer to the bottom
+when there is not enough content to do so. */
+footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
