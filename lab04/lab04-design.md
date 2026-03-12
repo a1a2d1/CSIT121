@@ -112,7 +112,7 @@ Provide description of images using the alt attribute.
 
 - [Earth Spinning on Its Axis](https://commons.wikimedia.org/wiki/File:Earth%27s_Axis.gif)
 
-- [Earth From Space]([URL](https://commons.wikimedia.org/wiki/File:Space_%28Unsplash%29.jpg))
+- [Earth From Space](https://commons.wikimedia.org/wiki/File:Space_%28Unsplash%29.jpg)
 
 - [Rendering of Earth](https://commons.wikimedia.org/wiki/File:Earth_Blender_render_4_transparent_background.png)
 
