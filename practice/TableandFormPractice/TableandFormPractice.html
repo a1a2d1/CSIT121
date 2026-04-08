@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table and Form Practice</title>
+  </head>
+  <body>
+    <header>
+      <h1>Discussion 07 Tables and Forms</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Number</th>
+            <th>Course Name</th>
+            <th>Instructor's Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSIT-121</td>
+            <td>Web Standards</td>
+            <td>Veronica Noone</td>
+          </tr>
+          <tr>
+            <td>CSIT-142</td>
+            <td>Introduction to Management Information Systems</td>
+            <td>Paulette Comet</td>
+          </tr>
+          <tr>
+            <td>CSIT-210</td>
+            <td>Introduction to Programming</td>
+            <td>Nazli Mehrazar</td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="submission.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          required
+          minlength="2"
+          maxlength="1600"
+          placeholder="Your Feedback is Appreciated"
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        <a href="mailto:ly845115@email.ccbcmd.edu">Contact Me</a>
+      </p>
+      <p>@2026 Alex Ly, All rights reserved.</p>
+    </footer>
+  </body>
+</html>
