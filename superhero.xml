@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superhero>
+    <name>        
+        Goku
+    </name>
+    <powers>
+        <physical>
+            <ability>                
+                Super Strength
+            </ability>
+            <ability>                
+                Super Speed
+            </ability>
+            <ability>                
+                Enhanced Durability
+            </ability>
+        </physical>
+        <kiManipulation>
+            <ability>                
+                Energy Blasts
+            </ability>
+            <ability>                
+                Kamehameha
+            </ability>
+            <ability>                
+                Spirit Bomb
+            </ability>
+        </kiManipulation>
+        <transformations>
+            <transformation>                
+                Super Saiyan
+            </transformation>
+            <transformation>                
+                Super Saiyan 2
+            </transformation>
+            <transformation>                
+                Super Saiyan 3
+            </transformation>
+        </transformations>
+    </powers>
+    <origin>        
+        Saiyan from Planet Vegeta
+    </origin>
+    <weaknesses>
+        <weakness>            
+            Needs energy to sustain transformations.
+        </weakness>
+        <weakness>            
+            Kindness; he let's his enemies heal/regenerate and/or go free.
+        </weakness>
+    </weaknesses>
+    <relationships>
+        <enemy>            
+            Frieza
+        </enemy>
+        <friend>            
+            Krillin
+        </friend>
+    </relationships>
+</superhero>
