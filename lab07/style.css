@@ -1,3 +1,82 @@
 body {
-  width: 100%;
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+}
+
+th,
+td {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(44, 120, 150);
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: darkorange;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
 }

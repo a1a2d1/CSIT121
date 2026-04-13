@@ -3,7 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Lab 07</h1>
+      <nav>
+        <ul>
+          <li><a href="tierlist.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <br />
+      <form onsubmit="handleSubmit(event)">
+        <!-- Name -->
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required />
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <!-- Dropdown -->
+        <label for="favorite">What is your favorite fruit group?</label><br />
+        <select id="favorite" name="favorite">
+          <option value="">Select one</option>
+          <option value="support">Berries</option>
+          <option value="feedback">Melons</option>
+          <option value="support">Citrus</option>
+          <option value="feedback">Other</option>
+        </select>
+        <br /><br />
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          required
+          minlength="2"
+          maxlength="1600"
+          placeholder="Your Feedback is Appreciated"
+        >
+        </textarea>
+        <br /><br />
+
+        <!-- Checkbox -->
+        <label class="radio-option">
+          <input type="checkbox" name="subscribe" />
+          Subscribe to newsletter </label
+        ><br /><br />
+
+        <label for="favorite">What is your favorite fruit?</label>
+        <input type="text" id="favorite" name="favorite" />
+        <br /><br />
+
+        <fieldset>
+          <legend>How much do you like fruit in general?</legend>
+
+          <label class="radio-option">
+            <input type="radio" name="like" value="love" />
+            Love it
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="like" value="ok" />
+            It's okay
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="like" value="no" />
+            Uhm, no
+          </label>
+        </fieldset>
+        <br /><br />
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer id="footer">@2026 Alex Ly. All rights reserved.</footer>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert('Form has been submitted!');
+        setTimeout(function () {
+          window.location.href = 'tierlist.html';
+        }, 1000); // 1 second delay
+      }
+    </script>
+  </body>
 </html>
