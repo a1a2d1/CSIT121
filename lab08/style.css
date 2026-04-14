@@ -28,7 +28,7 @@ img {
 /* Add padding to the top to push footer to the bottom when there is not enough
 content to do so. */
 footer {
-  padding-top: 120px;
+  padding-top: 200px;
   padding-bottom: 120px;
   text-align: center;
 }
