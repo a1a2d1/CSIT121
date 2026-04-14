@@ -94,38 +94,38 @@
         <title>Secretary</title>
         <division>Administration</division>
         <building>327</building>
-        <room>21</room>
+        <room>15</room>
     </employee>
     <employee id="be141">
         <firstname>Arthur</firstname>
         <lastname>Miller</lastname>
         <title>Legal Counsel</title>
         <division>Legal</division>
-        <building>327</building>
-        <room>15</room>
+        <building>339</building>
+        <room>06</room>
     </employee>
     <employee id="be142">
         <firstname>Darius</firstname>
         <lastname>White</lastname>
         <title>Sales Representative</title>
         <division>Sales</division>
-        <building>326</building>
-        <room>11</room>
+        <building>358</building>
+        <room>7</room>
     </employee>
     <employee id="be143">
         <firstname>Dorian</firstname>
         <lastname>Yates</lastname>
         <title>Junior Marketing Associate</title>
         <division>Marketing</division>
-        <building>327</building>
-        <room>21</room>
+        <building>319</building>
+        <room>36</room>
     </employee>
     <employee id="be144">
         <firstname>Phuc</firstname>
         <lastname>Tran</lastname>
         <title>IT Manager</title>
         <division>IT</division>
-        <building>320</building>
-        <room>1</room>
+        <building>401</building>
+        <room>100</room>
     </employee>
 </employees>
