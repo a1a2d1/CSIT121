@@ -28,9 +28,116 @@
       <section>
         <article>
           <h2>How is it used?</h2>
-          <h3></h3>
-          <p></p>
-          <p></p>
+          <p>
+            Using an EPUB file is pretty straight forward. An app or E-reader is
+            required. For Apple iPhone/iPad, the Apple Books app can be used. On
+            Android devices, Google Play Books can be used (Continual Engine,
+            n.d.; ). Some popular e-readers are Amazon Kindle, Barnes & Noble
+            Nook, and Kobo e-readers.
+          </p>
+          <p>
+            An EPUB file is esentially a ZIP archive with a predefined structure
+            that uses HTML, CSS, XML, and optional video or audio assets.
+            XHTML/HTML files are the chapters. CSS is used for styling. OPF file
+            is used for metadata. A navigation file is used for the table of
+            contents, and images, fonts, audio files, and video are assets.
+          </p>
+          <h3>EPUB Example</h3>
+          <h4>HTML</h4>
+          <pre><code>
+            &lt;?xml version="1.0" encoding="utf-8"?&gt;
+            &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+            &lt;head&gt;
+              &lt;title&gt;Chapter 1&lt;/title&gt;
+              &lt;link rel="stylesheet" href="styles.css"/&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Chapter 1&lt;/h1&gt;
+              &lt;p&gt;Chapter 1 contents...&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <h4>CSS</h4>
+          <pre><code>
+            body {
+              font-family: serif;
+              line-height: 1.5;
+            }
+
+            h1 {
+              text-align: center;
+            }
+          </code></pre>
+          <h4>container.xml</h4>
+          <pre><code>
+          &lt;?xml version="1.0"?&gt;
+          &lt;container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container"&gt;
+            &lt;rootfiles&gt;
+                &lt;rootfile full-path="content.opf"
+                media-type="application/oebps-package+xml"/&gt;
+            &lt;/rootfiles&gt;
+          &lt;/container&gt;
+          </code></pre>
+          <h4>content.opf</h4>
+          <pre><code>
+              &lt;?xml version="1.0"?&gt;
+              &lt;package xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid"
+                version="2.0"&gt;
+
+                &lt;metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:dcterms="http://purl.org/dc/terms/"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:opf="http://www.idpf.org/2007/opf"&gt;
+                    &lt;dc:title&gt;Epub Format Construction Guide&lt;/dc:title&gt;
+                    &lt;dc:language xsi:type="dcterms:RFC3066"&gt;en&lt;/dc:language&gt;
+                    &lt;dc:identifier id="dcidid" opf:scheme="URI"&gt;
+                      http://www.hxa7241.org/articles/content/epup-guide_hxa7241_2007_2.epub
+                    &lt;/dc:identifier&gt;
+                    &lt;dc:subject&gt;Non-fiction, technical article, tutorial, Epub, IDPF, ebook&lt;/dc:subject&gt;
+                    &lt;dc:description&gt;A guide for making Epub ebooks/publications, sufficient
+                      for most purposes. It requires understanding of XHTML, CSS, XML.
+                    &lt;/dc:description&gt;
+                    &lt;dc:relation&gt;http://www.hxa.name/&lt;/dc:relation&gt;
+                    &lt;dc:creator&gt;Harrison Ainsworth / HXA7241&lt;/dc:creator&gt;
+                    &lt;dc:publisher&gt;Harrison Ainsworth / HXA7241&lt;/dc:publisher&gt;
+                    &lt;dc:date xsi:type="dcterms:W3CDTF"&gt;2007-12-28&lt;/dc:date&gt;
+                    &lt;dc:date xsi:type="dcterms:W3CDTF"&gt;2010-08-27&lt;/dc:date&gt;
+                    &lt;dc:rights&gt;Creative Commons BY-SA 3.0 License.&lt;/dc:rights&gt;
+                &lt;/metadata&gt;
+
+                &lt;manifest&gt;
+                    &lt;item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" /&gt;
+                    &lt;item id="css" href="EpubGuide.css" media-type="text/css" /&gt;
+                    &lt;item id="logo" href="hxa7241-logo.svg" media-type="image/svg+xml" /&gt;
+                    &lt;item id="title" href="EpubGuide-title.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="contents" href="EpubGuide-contents.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="intro" href="EpubGuide-intro.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="part1" href="EpubGuide-1.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="part2" href="EpubGuide-2.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="part3" href="EpubGuide-3.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="part4" href="EpubGuide-4.html" media-type="application/xhtml+xml" /&gt;
+                    &lt;item id="specs" href="EpubGuide-specs.html" media-type="application/xhtml+xml" /&gt;
+                &lt;/manifest&gt;
+
+                &lt;spine toc="ncx"&gt;
+                    &lt;itemref idref="title" /&gt;
+                    &lt;itemref idref="contents" /&gt;
+                    &lt;itemref idref="intro" /&gt;
+                    &lt;itemref idref="part1" /&gt;
+                    &lt;itemref idref="part2" /&gt;
+                    &lt;itemref idref="part3" /&gt;
+                    &lt;itemref idref="part4" /&gt;
+                    &lt;itemref idref="specs" /&gt;
+                &lt;/spine&gt;
+
+                &lt;guide&gt;
+                    &lt;reference type="title-page" title="Title Page" href="EpubGuide-title.html" /&gt;
+                    &lt;reference type="toc" title="Table of Contents" href="EpubGuide-contents.html" /&gt;
+                    &lt;reference type="text" title="Text" href="EpubGuide-intro.html" /&gt;
+                &lt;/guide&gt;
+
+              &lt;/package&gt;
+          </code></pre>
           <p></p>
         </article>
       </section>
