@@ -1,6 +1,7 @@
 body {
   font-family: Verdana, Arial, sans-serif;
-  background: url('images/passagere-texture.jpg') center / cover no-repeat fixed;
+  background: url('../images/passagere-texture.jpg') center / cover no-repeat
+    fixed;
   margin: 0;
 }
 
