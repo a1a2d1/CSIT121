@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js" defer></script>
+    <title>EPUB 3.3 Standard Presentation</title>
+  </head>
+  <body>
+    <header>
+      <h1>EPUB 3.3 Standard Presentation</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="why.html">Why is it important?</a>
+        <a href="how.html" class="active">How is it used?</a>
+        <a href="sources.html">Sources</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>How is it used?</h2>
+          <p>
+            Using an EPUB file is pretty straight forward. An app or E-reader is
+            required. For Apple iPhone/iPad, the Apple Books app can be used. On
+            Android devices, Google Play Books can be used (Continual Engine,
+            n.d.; ). Some popular e-readers are Amazon Kindle, Barnes & Noble
+            Nook, and Kobo e-readers.
+          </p>
+          <p>
+            An EPUB file is esentially a ZIP archive with a predefined structure
+            that uses HTML, CSS, XML, and optional video or audio assets.
+            XHTML/HTML files are the chapters. CSS is used for styling. OPF file
+            is used for metadata. A navigation file is used for the table of
+            contents, and images, fonts, audio files, and video are assets.
+          </p>
+          <h3>EPUB Example</h3>
+          <h4>HTML</h4>
+          <pre><code>
+            &lt;?xml version="1.0" encoding="utf-8"?&gt;
+            &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+            &lt;head&gt;
+              &lt;title&gt;Chapter 1&lt;/title&gt;
+              &lt;link rel="stylesheet" href="styles.css"/&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Chapter 1&lt;/h1&gt;
+              &lt;p&gt;Chapter 1 contents...&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <h4>CSS</h4>
+          <pre><code>
+            body {
+              font-family: serif;
+              line-height: 1.5;
+            }
+
+            h1 {
+              text-align: center;
+            }
+          </code></pre>
+          <p>
+            <a href="how.md">XML example</a>
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>@2026 Alex Ly. All rights reserved.</footer>
+  </body>
+</html>

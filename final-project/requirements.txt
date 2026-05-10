@@ -1,0 +1,59 @@
+
+Purpose
+To demonstrate the web development skills learned throughout the semester.
+
+Overview
+Design and develop a website using modern design practices to showcase all your
+hard work this semester.
+
+Use this project to create a web experience that links to your previous labs. Your
+overall website should have a consistent design, which may require you to update,
+modify, or move your previous labs. A single page that links to them is unacceptable.
+We are looking for a cohesive website to act as your portfolio for this class. It should
+have a straightforward, consistent design throughout.
+
+Required Deliverables
+====================
+Website published to your GitHub account.
+A copy of the website zipped (compressed) and uploaded to Brightspace.
+
+Minimum Technical Requirements
+Four (4) HTML pages that include appropriate titles
+One (1) HTML table used correctly and styled
+One (1) list (unordered, ordered, or definition) with at least three (3) items
+At least two (2) external links to relevant sites
+At least one (1) accessible image element in HTML
+At least one (1) image displayed through CSS
+Each page must have a clear content hierarchy through the use of headings
+Each page must link to all pages on the site internally (no orphans) - consistent,
+accessible navigation
+The pages must use page/structural elements (header, main, aside, footer, etc) and
+be styled/laid out through CSS (normal flow is unacceptable).
+Your site must include special mobile layout rules through the use of a @media
+query that provides users with both a mobile and desktop experience your site.
+All HTML/CSS must validate without warnings or errors
+
+Please note: If you take the time to design and develop a well-designed site, most
+of these requirements will be met naturally.
+
+Other Requirements
+You must test your website on at least two browsers and one mobile device.
+
+You will provide a lessons learned reflection (2-3 paragraphs) included as part of
+your website. The Lessons Learned reflection must include:
+
+A self-reflection completing this project. Think about your challenges and triumphs
+and any other thoughts about the project.
+
+Any observations or lessons learned by testing on multiple browsers and devices.
+A reflection on what you learned in the course as a whole.
+
+Submission Checklist
+DO NOT SUBMIT THIS PROJECT WITHOUT COMPLETING THIS CHECKLIST!
+
+__Did you review the technical requirements and compare them to your final project?
+__Did you validate your files?
+__Did you test all the links on your site after you uploaded it to the server?
+__Did you include your Lessons Learned with all the requirements?
+__Did you attach your complete website as a Zip file to this assignment?
+__Did you link to the live version of the website on the server?
